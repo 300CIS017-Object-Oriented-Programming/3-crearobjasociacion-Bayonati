@@ -19,3 +19,23 @@ std::string Propietario::getNombre()  {
 void Propietario::setNombre(std::string nombre) {
     this->nombre = nombre;
 }
+
+Propietario::Propietario(std::string nombre){
+    this-> nombre = nombre;
+}
+
+void Propietario::setID(string ID){
+    docIdentidad = ID;
+}
+
+void Propietario::setAge(int age){
+    edad = age;
+}
+
+string Propietario::mostrarInfo(){
+    string info;
+    info += "Nombre: " + nombre + "\n";
+    info += "Documento de identidad: " + docIdentidad + "\n";
+    info += "Edad: " + std::to_string(edad) + "\n";
+    return info;
+}

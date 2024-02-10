@@ -8,6 +8,8 @@
 #include <iostream>
 #include "Propietario.h"
 
+using namespace std; 
+
 class Perro {
 private:
     int edad;
@@ -40,5 +42,8 @@ public:
     void setTamanio(std::string tamanio);
     std::string getColor();
     void setColor(std::string color);
+
+    Perro(std::string name, int age, string race, string colour, string size);
+    
 };
 #endif

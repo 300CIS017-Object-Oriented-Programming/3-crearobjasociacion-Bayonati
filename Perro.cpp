@@ -75,5 +75,10 @@ Perro::~Perro() {
 }
 
 
-
-
+Perro::Perro(std::string name, int age, string race, string colour, string size){
+    this->nombre = name;
+    this->edad = age;
+    this->raza = race;
+    this->tamanio = size;
+    this->color = colour;
+}
